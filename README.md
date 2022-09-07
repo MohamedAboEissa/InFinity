@@ -1,0 +1,2 @@
+# InFinity
+educational platform
