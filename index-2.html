@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title> InFinity </title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/png" href="img/logo.png">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/owl.carousel.css">
+    <script src="js/html5shiv.min.js"></script>
+    <script src="js/respond.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!--=========== start settings-box  ================-->
+    <div class="settings-box">
+        <div class="toggle-settings">
+            <button class="btn-toggle" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+                <i class="fa-solid fa-fan fa-2x"></i>
+            </button>
+        </div>
+        <div class="settings-content text-center offcanvas offcanvas-start"  id="offcanvasExample" >
+            <div class="colors">
+                <h3 class="mb-3" >colors</h3>
+                <ul >
+                    <li  data-theme = "var(--color-main)"       class="color-1 active"></li>
+                    <li  data-theme = "var(--color-yellow)"     class="color-2"></li>
+                    <li  data-theme = "var(--color-red)"        class="color-3"></li>
+                    <li  data-theme = "var(--color-green)"      class="color-4"></li>
+                    <li  data-theme = "var(--color-teal)"       class="color-5"></li>
+                </ul>
+            </div>
+            <div class="background">
+                <h3 class="mt-3 mb-3">background</h3>
+                <div class="light active" data-background="var(--background-light)">light</div>
+                <div class="dark"         data-background="var(--background-dark)">dark</div>
+            </div>
+        </div>
+    </div>
+    <!--=========== end settings-box  ================-->
+
+
+    <!--================= START NAVBAR  ==================-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand logo-pega" href="index.html">
+                <img src="img/logo.png" alt="" width="50" height="50">
+            </a>
+            <a class="navbar-brand" href="index.html"><span>In</span>Finity</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle active" href="index.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Home
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="index.html">Home</a></li>
+                            <li><a class="dropdown-item active" href="index-2.html">Home-2</a></li>
+                        </ul>
+                    </li>
+                    
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="courses.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            courses
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="courses.html"> All Courses</a></li>
+                            <li><a class="dropdown-item" href="website-courses.html">Website</a></li>
+                            <li><a class="dropdown-item" href="photoshop.html">PhotoShop</a></li>
+                            <li><a class="dropdown-item" href="cyber-security.html">Cyber Security</a></li>
+                            <li><a class="dropdown-item" href="design.html">Design</a></li>
+                            <li><a class="dropdown-item" href="digital-marketing.html">Digital Marketing</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="index.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            page
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="index.html"> Home </a></li>
+                                <li><a class="dropdown-item" href="index-2.html"> Home-2 </a></li>
+                                <li><a class="dropdown-item" href="about.html"> About </a></li>
+                                <li><a class="dropdown-item" href="contact.html"> Contact</a></li>
+                                <li><a class="dropdown-item" href="404.html"> 404 </a></li>
+                                <li><a class="dropdown-item" href="courses.html"> All Courses</a></li>
+                                <li><a class="dropdown-item" href="website-courses.html">Website</a></li>
+                                <li><a class="dropdown-item" href="photoshop.html">PhotoShop</a></li>
+                                <li><a class="dropdown-item" href="cyber-security.html">Cyber Security</a></li>
+                                <li><a class="dropdown-item" href="design.html">Design</a></li>
+                                <li><a class="dropdown-item" href="digital-marketing.html">Digital Marketing</a></li>
+                        </ul>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">about</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!--================= END NAVBAR  ====================-->
+    
+
+    <!--================= START slider ==================-->
+    <div class="slider">
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item">
+                    <img src="img/slider-1.jpg" class="d-block h-100 w-100" alt="...">
+                    <div class="carousel-caption pe-2  d-md-block">
+                        <h4>The largest platform for teaching courses</h4>
+                        <p>Learn the most powerful Photoshop course from zero to professionalism,
+                            <p class="d-none d-sm-block d-sm-none d-md-block">We have accredited certificates and many educational courses in many different fields at the lowest prices, and we have distinguished services and follow-up after completing the courses.</p>
+                        </p>
+                    </div>
+                </div>
+                <div class="carousel-item active">
+                    <img src="img/slider-2.jpg" class="d-block h-100 w-100" alt="...">
+                    <div class="carousel-caption pe-2  d-md-block">
+                        <h4>The largest platform for teaching courses</h4>
+                        <p>Learn how to become a mobile app programmer, designer, and web programmer,
+                            <p class="d-none d-sm-block d-sm-none d-md-block">We have accredited certificates and many educational courses in many different fields at the lowest prices, and we have distinguished services and follow-up after completing the courses.</p>
+                        </p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="img/slider-3.jpg" class="d-block h-100 w-100" alt="...">
+                    <div class="carousel-caption pe-2  d-md-block">
+                        <h4>The largest platform for teaching courses</h4>
+                        <p>A complete course on digital marketing and its most important new topics,
+                            <p class="d-none d-sm-block d-sm-none d-md-block">We have accredited certificates and many educational courses in many different fields at the lowest prices, and we have distinguished services and follow-up after completing the courses.</p>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+        </div>
+    </div>
+    <!--================= END slider ====================-->
+
+    <div class="content-page active">
+
+        <!--================== Start fun facts  ====================-->
+        <div class="fun-facts">
+            <div class="container">
+                <div class="row fun-facts-content">
+                    <div class="col-lg-3  col-md-6 ">
+                        <div class="fun-facts-item">
+                            <span><i class="fa-solid fa-graduation-cap fa-2x"></i></span>
+                            <h2>700k</h2>
+                            <p>students we 've</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3  col-md-6 ">
+                        <div class="fun-facts-item">
+                            <span><i class="fa-brands fa-accusoft fa-2x"></i></span>
+                            <h2>500+</h2>
+                            <p>courses</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3  col-md-6 ">
+                        <div class="fun-facts-item">
+                            <span><i class="fa-solid fa-earth-africa fa-2x"></i></span>
+                            <h2>50+</h2>
+                            <p>countries</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3  col-md-6 ">
+                        <div class="fun-facts-item">
+                            <span class="pb-3"><i class="fa-solid fa-chalkboard-user fa-2x"></i></span>
+                            <h2>99+</h2>
+                            <p>skilled instructors</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--================== END fun facts  ======================-->
+
+
+
+        <!--================== Start  courses ====================-->
+        <div class="courses" id="courses">
+            <div class="container">
+                <div class="head-courses text-center">
+                    <h4 class=" header-min ">courses</h4>
+                    <h2 class="header-max ">find the right course for you </h2>
+                </div>
+                <div class="row">
+                    <div class="box col-lg-3 col-md-6">
+                        <a href="courses.html">
+                            <div class="content-img">
+                                <span>$49</span>
+                                <img src="img/courses/courses.jpg" class="img-fluid" alt="">
+                            </div>
+                        </a>
+                        <div class="courses-text">
+                            <h5>html for beginners</h5>
+                            <div class="img-avatar">
+                                <img src="img/avatar.jpg" alt="">
+                                <span class="text-pr">mohamed</span>
+                            </div>
+                            <div class="item-icon">
+                                <span>(4.5)</span>
+                                <span class="stars">
+                                  <i class="fas fa-star"></i>
+                                  <i class="fas fa-star"></i>
+                                  <i class="fas fa-star"></i>
+                                  <i class="fas fa-star"></i>
+                                  <i class="fas fa-star-half-alt"></i>
+                                </span>
+                                <span>(250)</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box col-lg-3 col-md-6">
+                        <a href="courses.html">
+                            <div class="content-img">
+                                <span>$49</span>
+                                <img src="img/courses/courses-1.jpg" class="img-fluid" alt="">
+                            </div>
+                        </a>
+                        <div class="courses-text">
+                            <h5>css for beginners</h5>
+                            <div class="img-avatar">
+                                <img src="img/avatar.jpg" alt="">
+                                <span class="text-pr">mohamed</span>
+                            </div>
+                            <div class="item-icon">
+                                <span>(4.5)</span>
+                                <span class="stars">
+                                  <i class="fas fa-star"></i>
+                                  <i class="fas fa-star"></i>
+                                  <i class="fas fa-star"></i>
+                                  <i class="fas fa-star"></i>
+                                  <i class="fas fa-star-half-alt"></i>
+                                </span>
+                                <span>(250)</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box col-lg-3 col-md-6">
+                        <a href="courses.html">
+                            <div class="content-img">
+                                <span>$49</span>
+                                <img src="img/courses/courses-2.jpg" class="img-fluid" alt="">
+                            </div>
+                        </a>
+                        <div class="courses-text">
+                            <h5>javascript for beginners</h5>
+                            <div class="img-avatar">
+                                <img src="img/avatar.jpg" alt="">
+                                <span class="text-pr">mohamed</span>
+                            </div>
+                            <div class="item-icon">
+                                <span>(4.5)</span>
+                                <span class="stars">
+                                  <i class="fas fa-star"></i>
+                                  <i class="fas fa-star"></i>
+                                  <i class="fas fa-star"></i>
+                                  <i class="fas fa-star"></i>
+                                  <i class="fas fa-star-half-alt"></i>
+                                </span>
+                                <span>(250)</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box col-lg-3 col-md-6">
+                        <a href="courses.html">
+                            <div class="content-img">
+                                <span>$49</span>
+                                <img src="img/courses/courses-3.jpg" class="img-fluid" alt="">
+                            </div>
+                        </a>
+                        <div class="courses-text">
+                            <h5>bootstrap for beginners</h5>
+                            <div class="img-avatar">
+                                <img src="img/avatar.jpg" alt="">
+                                <span class="text-pr">mohamed</span>
+                            </div>
+                            <div class="item-icon">
+                                <span>(4.5)</span>
+                                <span class="stars">
+                                  <i class="fas fa-star"></i>
+                                  <i class="fas fa-star"></i>
+                                  <i class="fas fa-star"></i>
+                                  <i class="fas fa-star"></i>
+                                  <i class="fas fa-star-half-alt"></i>
+                                </span>
+                                <span>(250)</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box col-lg-3 col-md-6">
+                        <a href="courses.html">
+                            <div class="content-img">
+                                <span>$49</span>
+                                <img src="img/courses/courses-4.jpg" class="img-fluid" alt="">
+                            </div>
+                        </a>
+                        <div class="courses-text">
+                            <h5>photoshop for beginners</h5>
+                            <div class="img-avatar">
+                                <img src="img/avatar.jpg" alt="">
+                                <span class="text-pr">mohamed</span>
+                            </div>
+                            <div class="item-icon">
+                                <span>(4.5)</span>
+                                <span class="stars">
+                                  <i class="fas fa-star"></i>
+                                  <i class="fas fa-star"></i>
+                                  <i class="fas fa-star"></i>
+                                  <i class="fas fa-star"></i>
+                                  <i class="fas fa-star-half-alt"></i>
+                                </span>
+                                <span>(250)</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box col-lg-3 col-md-6">
+                        <a href="courses.html">
+                            <div class="content-img">
+                                <span>$49</span>
+                                <img src="img/courses/courses-5.jpg" class="img-fluid" alt="">
+                            </div>
+                        </a>
+                        <div class="courses-text">
+                            <h5>design for beginners</h5>
+                            <div class="img-avatar">
+                                <img src="img/avatar.jpg" alt="">
+                                <span class="text-pr">mohamed</span>
+                            </div>
+                            <div class="item-icon">
+                                <span>(4.5)</span>
+                                <span class="stars">
+                                  <i class="fas fa-star"></i>
+                                  <i class="fas fa-star"></i>
+                                  <i class="fas fa-star"></i>
+                                  <i class="fas fa-star"></i>
+                                  <i class="fas fa-star-half-alt"></i>
+                                </span>
+                                <span>(250)</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box col-lg-3 col-md-6">
+                        <a href="courses.html">
+                            <div class="content-img">
+                                <span>$49</span>
+                                <img src="img/courses/courses-6.jpg" class="img-fluid" alt="">
+                            </div>
+                        </a>
+                        <div class="courses-text">
+                            <h5>digital marketing for beginners</h5>
+                            <div class="img-avatar">
+                                <img src="img/avatar.jpg" alt="">
+                                <span class="text-pr">mohamed</span>
+                            </div>
+                            <div class="item-icon">
+                                <span>(4.5)</span>
+                                <span class="stars">
+                                  <i class="fas fa-star"></i>
+                                  <i class="fas fa-star"></i>
+                                  <i class="fas fa-star"></i>
+                                  <i class="fas fa-star"></i>
+                                  <i class="fas fa-star-half-alt"></i>
+                                </span>
+                                <span>(250)</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box col-lg-3 col-md-6">
+                        <a href="courses.html">
+                            <div class="content-img">
+                                <span>$49</span>
+                                <img src="img/courses/courses-7.jpg" class="img-fluid" alt="">
+                            </div>
+                        </a>
+                        <div class="courses-text">
+                            <h5>cyber security for beginners</h5>
+                            <div class="img-avatar">
+                                <img src="img/avatar.jpg" alt="">
+                                <span class="text-pr">mohamed</span>
+                            </div>
+                            <div class="item-icon">
+                                <span>(4.5)</span>
+                                <span class="stars">
+                                  <i class="fas fa-star"></i>
+                                  <i class="fas fa-star"></i>
+                                  <i class="fas fa-star"></i>
+                                  <i class="fas fa-star"></i>
+                                  <i class="fas fa-star-half-alt"></i>
+                                </span>
+                                <span>(250)</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="button">
+                    <a href="courses.html"><button type="button" class="custom-btn btn">view all courses<div class="dot"></div></button></a>
+                </div>
+            </div>
+        </div>
+        <!--================== END  courses   ====================-->
+
+
+
+        <!--================== start  Certificates ====================-->
+        <div class="certificates container pt-5 pb-5">
+            <div class="about-text text-center">
+                <h4 class=" header-min ">Certificates</h4>
+                <h2 class="about-p">Certificates in all fields, upon completion of any course, you enter its test to obtain a certificate of completion of the course, accredited certificates</h2>
+            </div>
+            <div id="owl-demo" class="owl-carousel owl-theme mt-3 mb-3">
+                <div class="item"><img src="img/certificates/certificates-1.jpg" alt="certificate" /> </div>
+                <div class="item"><img src="img/certificates/certificates-2.jpg" alt="certificate" /> </div>
+                <div class="item"><img src="img/certificates/certificates-3.jpg" alt="certificate" /> </div>
+                <div class="item"><img src="img/certificates/certificates-4.jpg" alt="certificate" /> </div>
+                <div class="item"><img src="img/certificates/certificates-5.jpg" alt="certificate" /> </div>
+                <div class="item"><img src="img/certificates/certificates-6.jpg" alt="certificate" /> </div>
+                <div class="item"><img src="img/certificates/certificates-7.jpg" alt="certificate" /> </div>
+            </div>
+        </div>
+        <!--================== END  Certificates ====================-->
+
+        <!--================== Start  instructor ====================-->
+        <div class="instructor pt-5 pb-5">
+            <div class="container">
+                <div class="row  instructor-content">
+                    <div class="col-lg-6 col-sm-12">
+                        <div class="circular-img">
+                            <div class="circular-img-inner text-center">
+                                <div class="circular-img-circle"></div>
+                                <img src="img/bai-img.png" class="mx-auto" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-sm-12">
+                        <div class="instructor-text">
+                            <h4 class="header-min">become a instructor</h4>
+                            <h2 class="header-max">become a instructor</h2>
+                            <button type="button" class="custom-btn btn">apply now<div class="dot"></div></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--================== END  instructor ====================-->
+
+        <!--================== Start  testimonials ====================-->
+        <div class="testimonials pt-5 pb-5 position-relative">
+            <div class="decoration-circles">
+                <div class="decoration-circles-item"></div>
+                <div class="decoration-circles-item"></div>
+                <div class="decoration-circles-item"></div>
+                <div class="decoration-circles-item"></div>
+            </div>
+            <div class="decoration-images">
+                <img src="img/testimonials.png" alt="" class="decoration-img">
+                <img src="img/testimonials-1.png" alt="" class="decoration-img">
+                <img src="img/testimonials-2.png" alt="" class="decoration-img">
+            </div>
+            <div class="container">
+                <div class="head-testimonials text-center">
+                    <h4 class=" header-min ">students feedback</h4>
+                    <h2 class="header-max "> what our students say</h2>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-lg-6 col-md-8">
+                        <div class="img-box rounded-circle position-relative">
+                            <img src="img/testimonials.png" alt="" class="w-100 js-img rounded-circle">
+                        </div>
+                        <div id="carousel-Controls" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-inner text-center">
+                                <div class="carousel-item active" data-js-img="img/testimonials.png">
+                                    <div class="testimonials-item">
+                                        <p class="text-1">Lorem ipsum dolor sit amet consectetur, adipisicing elit. A officiis perspiciatis fuga recusandae dolore? Repellendus quod corporis dignissimos sunt dolores.</p>
+                                        <h3>mohamed</h3>
+                                        <p class="text-2">web developer</p>
+                                    </div>
+                                </div>
+                                <div class="carousel-item" data-js-img="img/testimonials-1.png">
+                                    <div class="testimonials-item">
+                                        <p class="text-1">Lorem ipsum dolor sit amet consectetur, adipisicing elit. A officiis perspiciatis fuga recusandae dolore? Repellendus quod corporis dignissimos sunt dolores.</p>
+                                        <h3>mohamed</h3>
+                                        <p class="text-2">web developer</p>
+                                    </div>
+                                </div>
+                                <div class="carousel-item" data-js-img="img/testimonials-2.png">
+                                    <div class="testimonials-item">
+                                        <p class="text-1">Lorem ipsum dolor sit amet consectetur, adipisicing elit. A officiis perspiciatis fuga recusandae dolore? Repellendus quod corporis dignissimos sunt dolores.</p>
+                                        <h3>mohamed</h3>
+                                        <p class="text-2">web developer</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-flex justify-content-evenly ">
+                                <button class="carousel-control-prev" type="button" data-bs-target="#carousel-Controls" data-bs-slide="prev">
+                                <span   aria-hidden="true"><i class="fa-solid fa-arrow-left"></i></span>
+                                <span class="visually-hidden">Previous</span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#carousel-Controls" data-bs-slide="next">
+                                <span aria-hidden="true"><i class="fa-solid fa-arrow-right"></i></span>
+                                <span class="visually-hidden">Next</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--================== END  testimonials ====================-->
+
+
+
+        <!--================== Start  about ====================-->
+        <div class="about pb-5 pt-5 " id="about">
+            <div class="container">
+                <div class="about-text text-center">
+                    <h4 class=" header-min ">about us</h4>
+                    <h2 class="about-p">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum id cumque aspernatur laborum totam? Ratione in placeat dignissimos ab molestias!</h2>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 col-sm-12 ">
+                        <div class="about-item">
+                            <span><i class="fa-solid fa-money-bill-1-wave"></i></span>
+                            <div class="text-item">
+                                <h4>Best Price</h4>
+                                <p class="text-pr">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto, sequi possimus maiores delectus dolore itaque?</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-12 ">
+                        <div class="about-item">
+                            <span><i class="fa-solid fa-thumbs-up"></i></span>
+                            <div class="text-item">
+                                <h4>PROFESSIONAL EXPERIENCE</h4>
+                                <p class="text-pr">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto, sequi possimus maiores delectus dolore itaque?</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-12 ">
+                        <div class="about-item">
+                            <span><i class="fa-solid fa-layer-group"></i></span>
+                            <div class="text-item">
+                                <h4>High level of experts</h4>
+                                <p class="text-pr">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto, sequi possimus maiores delectus dolore itaque?</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-12 ">
+                        <div class="about-item">
+                            <span><i class="fa-solid fa-certificate"></i></span>
+                            <div class="text-item">
+                                <h4>Accredited Certificates</h4>
+                                <p class="text-pr">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto, sequi possimus maiores delectus dolore itaque?</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--================== end  about ====================-->
+
+        <!--================== Start  footer ====================-->
+        <div class="footer pt-5 pb-3">
+            <div class="container ">
+                <div class="row ">
+                    <div class="col-lg-3 col-sm-6 ">
+                        <h4>abo eissa</h4>
+                        <div class="link "><a href="# ">about</a></div>
+                        <div class="link "><a href="# ">what we offer</a></div>
+                        <div class="link "><a href="# ">careers</a></div>
+                        <div class="link "><a href="# ">certificates</a></div>
+                        <div class="link "><a href="# ">blog</a></div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 ">
+                        <h4>learning</h4>
+                        <div class="link "><a href="# ">get the app</a></div>
+                        <div class="link "><a href="# ">testimonials</a></div>
+                        <div class="link "><a href="# ">pricing</a></div>
+                        <div class="link "><a href="# ">faq</a></div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 ">
+                        <h4>more</h4>
+                        <div class="link "><a href="# ">affiliates</a></div>
+                        <div class="link "><a href="# ">become a course creater</a></div>
+                        <div class="link "><a href="# ">trainig webinars</a></div>
+                        <div class="link "><a href="# ">free personality test </a></div>
+                        <div class="link "><a href="# ">help and support</a></div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 ">
+                        <h4>get in touch</h4>
+                        <div class="link "><a href="# "><i class="fa-brands brand-f fa-facebook-f "></i> facebook</a></div>
+                        <div class="link "><a href="# "><i class="fa-brands brand-t fa-twitter "></i> twitter</a></div>
+                        <div class="link "><a href="# "><i class="fa-brands brand-i fa-instagram "></i> instagram</a></div>
+                        <div class="link "><a href="# "><i class="fa-brands brand-y fa-youtube "></i> youtube</a></div>
+                        <div class="link "><a href="# "><i class="fa-brands brand-l fa-linkedin-in "></i> linkedin</a></div>
+                    </div>
+                </div>
+                <p class="pt-5 text-center ">Copyrights © <span id="year">2022</span>  - <a href=" ">mohamed abo eissa</a>, All Rights Reserved.</p>
+            </div>
+        </div>
+        <!--================== END  footer ====================-->
+
+
+
+    </div>
+
+
+
+
+
+
+    <script src="js/bootstrap.bundle.min.js "></script>
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/all.min.js "></script>
+    <script src="js/main.js "></script>
+</body>
+
+</html>
